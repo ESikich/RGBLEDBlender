@@ -1,4 +1,4 @@
-RTGBLEDBlender
+RGBLEDBlender
 =====================
 
 RGB blending and color library written for the Arduino.
