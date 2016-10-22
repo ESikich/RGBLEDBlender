@@ -40,6 +40,7 @@ public:
     bool Update(void);                                          //Update the blend
     void Hold(const Color);                                     //Hold color
     void TurnOff(void);                                         //Turn off LED
+    Color GetColor(void) const;                                 //Get current color
 private:
     int16_t IntPercent(const uint32_t, const uint32_t) const;   //Non floating point division function
     uint32_t start_millis_;                                     //Start and end times
