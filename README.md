@@ -24,9 +24,11 @@ Usage
 To blend arbitrary colors together, call the Blend() fuction once and then repeatedly call Update()
 
 ```C++
-uint32_t blend_time = 1000;
 my_blender.Blend(RED, YELLOW, blend_time);
+
+uint32_t blend_time = 1000;
 uint32_t done = millis() + blend_time;
+
 while(done > millis()){
     my_blender.Update();
 }
