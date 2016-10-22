@@ -23,10 +23,10 @@
 #define RGBLEDBlender_h
 
 #include "arduino.h"
-#include "Color.h"
-#include "Vector.h"
-#include "RGBLED.h"
-#include "Colors.h"
+#include "Color/Color.h"
+#include "Vector/Vector.h"
+#include "RGBLED/RGBLED.h"
+#include "Colors/Colors.h"
 
 class RGBLEDBlender{
 public:
