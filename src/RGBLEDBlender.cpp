@@ -91,7 +91,7 @@ void RGBLEDBlender::Cycle(uint32_t blend_millis){
             Blend(color_list_[color_list_.size() - 1], color_list_[0],  blend_millis);
         }
         //Increment the list counter
-        cycle_index_++;
+        ++cycle_index_;
     }
 }
 
