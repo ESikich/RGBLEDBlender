@@ -110,3 +110,8 @@ bool RGBLEDBlender::Update(void){
 	}
 	return result;
 }
+
+//Turn off LED,
+void RGBLEDBlender::TurnOff(void){
+	rgbled_.color = BLACK;
+}
