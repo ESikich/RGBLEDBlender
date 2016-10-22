@@ -12,6 +12,7 @@ See Colors.h for color definitions
 Overview of functions
 =====================
 
+
 **Blend**       - Blends two colors together
 **Random**      - Blends randomly generated colors together
 **RandomCycle** - Randomly cycles through a list of colors
