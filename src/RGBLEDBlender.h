@@ -38,7 +38,8 @@ public:
     void Cycle(uint32_t);                                       //Cycle through list of colors
     void AddColor(const Color);                                 //Add color to list
     bool Update(void);                                          //Update the blend
-    void TurnOff(void);                                        //Turn off LED
+    void Hold(const Color);                                     //Hold color
+    void TurnOff(void);                                         //Turn off LED
 private:
     int16_t IntPercent(const uint32_t, const uint32_t) const;   //Non floating point division function
     uint32_t start_millis_;                                     //Start and end times

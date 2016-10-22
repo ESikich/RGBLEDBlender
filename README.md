@@ -15,6 +15,7 @@ Overview of functions
 **Cycle**       - Cycles through a list of colors  
 **AddColor**    - Adds a color to the list  
 **Update**      - Call to update color  
+**Hold**        - Holds a color  
 **TurnOff**     - Turns off the LED  
 
 Pre-defined color definitions
