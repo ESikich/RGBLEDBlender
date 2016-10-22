@@ -12,21 +12,17 @@
 
 #include "RGBLEDBlender.h"
 
-void setup(){
-    srand(analogRead(0));  //Seed random number
-}
+void setup(){}
 
 void loop(){
-    Color colorList[6] = {RED, ORANGE, YELLOW, GREEN, BLUE, PURPLE};
-    //Create object red pin - 2, green pin - 3, blue pin - 4
-    RGBLEDBlender myBlender(2, 3, 4);
-    //Add colors to list from Color.h
-    for(uint8_t i = 0; i < 6; i++){
-        myBlender.AddColor(colorList[i]);
-    }
+	Color color_list[6] = {RED, ORANGE, YELLOW, GREEN, BLUE, PURPLE};
+    
+    RGBLEDBlender my_blender(2, 3, 4);
+	
+    for(uint8_t i = 0; i < 6; i++) my_blender.AddColor(colorList[i]);
 
     while(true){
         //Fade through list for 1000 ms
-        myBlender.Cycle(1000);
+        my_blender.Cycle(1000);
     }
 }

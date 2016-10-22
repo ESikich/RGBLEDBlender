@@ -12,16 +12,13 @@
 
 #include "RGBLEDBlender.h"
 
-void setup(){
-    srand(analogRead(0));  //Seed random number
-}
+void setup(){}
 
 void loop(){
-    //Create object red pin - 2, green pin - 3, blue pin - 4
-    RGBLEDBlender myBlender(2, 3, 4);
+    RGBLEDBlender my_blender(2, 3, 4);
 
     while(true){
         //Fade through random colors for 1000 ms
-        myBlender.Random(1000);
+        my_blender.Random(1000);
     }
 }

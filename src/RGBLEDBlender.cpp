@@ -27,6 +27,7 @@ RGBLEDBlender::RGBLEDBlender(void){
 	start_millis_ = 0;
 	end_millis_ = 0;
     cycle_index_ = 0;
+	srand(analogRead(0));
 }
 
 //Initialize variables
@@ -35,6 +36,7 @@ RGBLEDBlender::RGBLEDBlender(const uint8_t red_pin, const uint8_t green_pin, con
 	start_millis_ = 0;
 	end_millis_ = 0;
     cycle_index_ = 0;
+	srand(analogRead(0));
 }
 
 //Blend two colors together
