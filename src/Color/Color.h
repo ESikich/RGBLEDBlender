@@ -60,17 +60,4 @@ inline Color operator/(const int16_t k, Color rhs)  { return rhs /= k; }
 inline bool operator==(const Color& lhs, const Color& rhs){return lhs.red == rhs.red && lhs.green == rhs.green && lhs.blue == rhs.blue; }
 inline bool operator!=(const Color& lhs, const Color& rhs){return !operator==(lhs,rhs);}
 
-#define RED             {255, 0,   0}
-#define ORANGE          {255, 128, 0}
-#define YELLOW          {255, 255, 0}
-#define CHARTREUSE      {128, 255, 0}
-#define GREEN           {0,   255, 0}
-#define TEAL            {0, 255, 128}
-#define CYAN            {0, 255, 255}
-#define CERULEAN        {0, 128, 255} 
-#define BLUE            {0,   0, 255}
-#define PURPLE          {128, 0, 255}
-#define MAGENTA         {255, 0, 255}
-#define WHITE           {255,255,255}
-
 #endif

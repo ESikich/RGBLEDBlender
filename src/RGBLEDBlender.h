@@ -26,6 +26,7 @@
 #include "Color.h"
 #include "Vector.h"
 #include "RGBLED.h"
+#include "Colors.h"
 
 class RGBLEDBlender{
 public:
