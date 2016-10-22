@@ -114,9 +114,10 @@ bool RGBLEDBlender::Update(void){
 //Hold color
 void RGBLEDBlender::Hold(const Color color){
     rgbled_.color = color;
+    rgbled_.Update();
 }
 
 //Turn off LED,
 void RGBLEDBlender::TurnOff(void){
-    rgbled_.color = BLACK;
+    Hold(Black);
 }
