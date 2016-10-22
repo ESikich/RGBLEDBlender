@@ -19,8 +19,8 @@
 *   along with RGBLEDBlender.  If not, see <http://www.gnu.org/licenses/>.
 ******************************************************************************/
 
-#ifndef _COLOR_h
-#define _COLOR_h
+#ifndef Color_h
+#define Color_h
 /*
 #if defined(ARDUINO) && ARDUINO >= 100
 #include "arduino.h"
