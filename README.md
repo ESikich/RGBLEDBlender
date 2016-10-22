@@ -53,7 +53,7 @@ Color my_color2 = {1, 2 ,3};
 my_color *= 2;
 //my_color would now be == {20, 30, 40}
 
-my_color += my_color2
+my_color += my_color2;
 //my_color would now be == {21, 32, 43}
 ```
 **NOTE:  Be vigilant when doing this, as the Color struct is made of int16_t's.
