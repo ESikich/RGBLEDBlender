@@ -1,7 +1,7 @@
 /******************************************************************************
-*	RGBLEDBlender.h
-*	by Erik Sikich
-*	November 2016
+*    RGBLEDBlender.h
+*    by Erik Sikich
+*    November 2016
 *
 *   This file is part of RGBLEDBlender.
 *
@@ -30,21 +30,21 @@
 
 class RGBLEDBlender{
 public:
-	RGBLEDBlender(void);
-	RGBLEDBlender(const uint8_t, const uint8_t, const uint8_t); //Constructors
-	void Blend(const Color,const Color,const  uint32_t);        //Blend two colors
+    RGBLEDBlender(void);
+    RGBLEDBlender(const uint8_t, const uint8_t, const uint8_t); //Constructors
+    void Blend(const Color,const Color,const  uint32_t);        //Blend two colors
     void Random(const uint32_t);                                //Blend random colors
     void RandomCycle(const uint32_t);                           //Blend random colors from a list
     void Cycle(uint32_t);                                       //Cycle through list of colors
     void AddColor(const Color);                                 //Add color to list
-	bool Update(void);                                          //Update the blend
-	void TurnOff(void);										//Turn off LED
+    bool Update(void);                                          //Update the blend
+    void TurnOff(void);                                        //Turn off LED
 private:
-	int16_t IntPercent(const uint32_t, const uint32_t) const;   //Non floating point division function
-	uint32_t start_millis_;                                     //Start and end times
-	uint32_t end_millis_;
-	Color diff_color_;                                          //Difference between the two colors
-	Color start_color_;                                         //Starting and ending colors
+    int16_t IntPercent(const uint32_t, const uint32_t) const;   //Non floating point division function
+    uint32_t start_millis_;                                     //Start and end times
+    uint32_t end_millis_;
+    Color diff_color_;                                          //Difference between the two colors
+    Color start_color_;                                         //Starting and ending colors
     Color end_color_;
     RGBLED rgbled_;                                             //Our RGBLED
     Vector<Color> color_list_;                                  //List of colors

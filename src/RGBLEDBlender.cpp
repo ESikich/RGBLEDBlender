@@ -1,7 +1,7 @@
 /******************************************************************************
-*	RGBLEDBlender.cpp
-*	by Erik Sikich
-*	November 2016
+*    RGBLEDBlender.cpp
+*    by Erik Sikich
+*    November 2016
 *
 *   This file is part of RGBLEDBlender.
 *
@@ -23,45 +23,45 @@
 
 //Initialize variables
 RGBLEDBlender::RGBLEDBlender(void){
-	rgbled_.Init();
-	start_millis_ = 0;
-	end_millis_ = 0;
+    rgbled_.Init();
+    start_millis_ = 0;
+    end_millis_ = 0;
     cycle_index_ = 0;
-	srand(analogRead(0));
+    srand(analogRead(0));
 }
 
 //Initialize variables
 RGBLEDBlender::RGBLEDBlender(const uint8_t red_pin, const uint8_t green_pin, const uint8_t blue_pin){
-	rgbled_.Assign(red_pin, green_pin, blue_pin);
-	start_millis_ = 0;
-	end_millis_ = 0;
+    rgbled_.Assign(red_pin, green_pin, blue_pin);
+    start_millis_ = 0;
+    end_millis_ = 0;
     cycle_index_ = 0;
-	srand(analogRead(0));
+    srand(analogRead(0));
 }
 
 //Blend two colors together
 void RGBLEDBlender::Blend(const Color start_color, const Color finish_color, const uint32_t blend_millis){
-	start_millis_ = millis();                   //Store the time that the blend will begin and end
-	end_millis_ = start_millis_ + blend_millis;
-	start_color_ = start_color;                 //Set starting and ending colors
-	end_color_ = finish_color;
+    start_millis_ = millis();                   //Store the time that the blend will begin and end
+    end_millis_ = start_millis_ + blend_millis;
+    start_color_ = start_color;                 //Set starting and ending colors
+    end_color_ = finish_color;
     diff_color_ = finish_color - start_color;               //Calculate the difference between the two colors
-	rgbled_.color = start_color;                //Initialize the LED's color
+    rgbled_.color = start_color;                //Initialize the LED's color
 }
 
 //Blend random colors
 void RGBLEDBlender::Random(const uint32_t blend_millis){
     //Update the blend
-	if(Update() == true){
-		uint32_t r = rand();
+    if(Update() == true){
+        uint32_t r = rand();
         //Use the last color as the starting point and a random end color
-		Blend(end_color_, {uint8_t(r), uint8_t(r >> 8), uint8_t(r >> 8)}, blend_millis);
-	}
+        Blend(end_color_, {uint8_t(r), uint8_t(r >> 8), uint8_t(r >> 8)}, blend_millis);
+    }
 }
 
 //Find how far through the blend time we are without using floating point math
 int16_t RGBLEDBlender::IntPercent(const uint32_t a, const uint32_t b) const{
-	return (255 * a + b / 2) / b;
+    return (255 * a + b / 2) / b;
 }
 
 //Add a color to the color list
@@ -99,19 +99,19 @@ void RGBLEDBlender::Cycle(uint32_t blend_millis){
 
 //Update RGB LED colors, return true if the blend is done
 bool RGBLEDBlender::Update(void){
-	bool result = true;
-	uint32_t now = millis();
-	if(now <= end_millis_){                     //Check to see if we're done blending
+    bool result = true;
+    uint32_t now = millis();
+    if(now <= end_millis_){                     //Check to see if we're done blending
                                                 //Find out how far through the blend time we are
         uint16_t percentage = IntPercent(now - start_millis_, end_millis_ - start_millis_);
-        rgbled_.color = start_color_ + ((diff_color_) * percentage) / 255;	
-		rgbled_.Update();                       //Update the LED color
-		result = false;                         //Not done blending so return false
-	}
-	return result;
+        rgbled_.color = start_color_ + ((diff_color_) * percentage) / 255;    
+        rgbled_.Update();                       //Update the LED color
+        result = false;                         //Not done blending so return false
+    }
+    return result;
 }
 
 //Turn off LED,
 void RGBLEDBlender::TurnOff(void){
-	rgbled_.color = BLACK;
+    rgbled_.color = BLACK;
 }
