@@ -18,7 +18,7 @@ Overview of functions
 **Update**      - Call to update color  
 **Hold**        - Holds a color  
 **TurnOff**     - Turns off the LED  
-**GetColor***   - Returns current color
+**GetColor**   - Returns current color
 
 Usage
 =====================
