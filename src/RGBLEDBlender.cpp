@@ -72,7 +72,9 @@ void RGBLEDBlender::RandomCycle(const Color *color_list, const uint8_t size, con
 }
 
 //Cycle through a list of colors
-void RGBLEDBlender::Cycle(const uint8_t size, const uint32_t blend_millis){
+void RGBLEDBlender::Cycle(const Color *color_list, const uint8_t size, const uint32_t blend_millis){
+    color_list_ = color_list;
+    
     //Reset cycle index at the end of the list
     if(cycle_index_ == size){
         cycle_index_ = 0;
