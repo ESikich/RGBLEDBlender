@@ -27,6 +27,7 @@ void RGBLEDBlender::Init(void){
     end_millis_ = 0;
     cycle_index_ = 0;
     srand(analogRead(0));
+    color_list_ = NULL;
 }
 
 //Initialize variables
