@@ -15,14 +15,12 @@
 void setup(){}
 
 void loop(){
-  Color color_list[6] = {RED, ORANGE, YELLOW, GREEN, BLUE, PURPLE};
+  Color color_list[6] = {_RED, _ORANGE, _YELLOW, _GREEN, _BLUE, _PURPLE};
     
     RGBLEDBlender my_blender(2, 3, 4);
-  
-    for(uint8_t i = 0; i < 6; i++) my_blender.AddColor(color_list[i]);
 
     while(true){
         //Fade through list for 1000 ms
-        my_blender.Cycle(1000);
+        my_blender.Cycle(color_list, 6, 1000);
     }
 }
