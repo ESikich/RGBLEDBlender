@@ -1,139 +1,139 @@
-#define    ALICEBLUE        {240,248,255}
-#define    ANTIQUEWHITE     {250,235,215}
-#define    AQUA             {0,255,255}
-#define    AQUAMARINE       {127,255,212}
-#define    AZURE            {240,255,255}
-#define    BEIGE            {245,245,220}
-#define    BISQUE           {255,228,196}
-#define    BLACK            {0,0,0}
-#define    BLANCHEDALMOND   {255,235,205}
-#define    BLUE             {0,0,255}
-#define    BLUEVIOLET       {138,43,226}
-#define    BROWN            {165,42,42}
-#define    BURLYWOOD        {222,184,135}
-#define    CADETBLUE        {95,158,160}
-#define    CHARTREUSE       {127,255,0}
-#define    CHOCOLATE        {210,105,30}
-#define    CORAL            {255,127,80}
-#define    CORNFLOWERBLUE   {100,149,237}
-#define    CORNSILK         {255,248,220}
-#define    CRIMSON          {220,20,60}
-#define    CYAN             {0,255,255}
-#define    DARKBLUE         {0,0,139}
-#define    DARKCYAN         {0,139,139}
-#define    DARKGRAY         {169,169,169}
-#define    DARKGREEN        {0,100,0}
-#define    DARKKHAKI        {189,183,107}
-#define    DARKMAGENTA      {139,0,139}
-#define    DARKOLIVEGREEN   {85,107,47}
-#define    DARKORANGE       {255,140,0}
-#define    DARKORCHID       {153,50,204}
-#define    DARKRED          {139,0,0}
-#define    DARKSALMON       {233,150,122}
-#define    DARKSEAGREEN     {143,188,143}
-#define    DARKSLATEBLUE    {72,61,139}
-#define    DARKSLATEGRAY    {47,79,79}
-#define    DARKTURQUOISE    {0,206,209}
-#define    DARKVIOLET       {148,0,211}
-#define    DEEPPINK         {255,20,147}
-#define    DEEPSKYBLUE      {0,191,255}
-#define    DIMGRAY          {105,105,105}
-#define    DODGERBLUE       {30,144,255}
-#define    FIREBRICK        {178,34,34}
-#define    FLORALWHITE      {255,250,240}
-#define    FORESTGREEN      {34,139,34}
-#define    FUCHSIA          {255,0,255}
-#define    GAINSBORO        {220,220,220}
-#define    GHOSTWHITE       {248,248,255}
-#define    GOLD             {255,215,0}
-#define    GOLDENROD        {218,165,32}
-#define    GRAY             {128,128,128}
-#define    GREEN            {0,128,0}
-#define    GREENYELLOW      {173,255,47}
-#define    HONEYDEW         {240,255,240}
-#define    HOTPINK          {255,105,180}
-#define    INDIANRED        {205,92,92}
-#define    INDIGO           {75,0,130}
-#define    IVORY            {255,255,240}
-#define    KHAKI            {240,230,140}
-#define    LAVENDER         {230,230,250}
-#define    LAVENDERBLUSH    {255,240,245}
-#define    LAWNGREEN        {124,252,0}
-#define    LEMONCHIFFON     {255,250,205}
-#define    LIGHTBLUE        {173,216,230}
-#define    LIGHTCORAL       {240,128,128}
-#define    LIGHTCYAN        {224,255,255}
-#define    LIGHTGOLDENRODYELLOW    {250,250,210}
-#define    LIGHTGRAY        {211,211,211}
-#define    LIGHTGREEN       {144,238,144}
-#define    LIGHTPINK        {255,182,193}
-#define    LIGHTSALMON      {255,160,122}
-#define    LIGHTSEAGREEN    {32,178,170}
-#define    LIGHTSKYBLUE     {135,206,250}
-#define    LIGHTSLATEGRAY   {119,136,153}
-#define    LIGHTSTEELBLUE   {176,196,222}
-#define    LIGHTYELLOW      {255,255,224}
-#define    LIME             {0,255,0}
-#define    LIMEGREEN        {50,205,50}
-#define    LINEN            {250,240,230}
-#define    MAGENTA          {255,0,255}
-#define    MAROON           {128,0,0}
-#define    MEDIUMAQUAMARINE {102,205,170}
-#define    MEDIUMBLUE       {0,0,205}
-#define    MEDIUMORCHID     {186,85,211}
-#define    MEDIUMPURPLE     {147,112,219}
-#define    MEDIUMSEAGREEN   {60,179,113}
-#define    MEDIUMSLATEBLUE  {123,104,238}
-#define    MEDIUMSPRINGGREEN {0,250,154}
-#define    MEDIUMTURQUOISE  {72,209,204}
-#define    MEDIUMVIOLETRED  {199,21,133}
-#define    MIDNIGHTBLUE     {25,25,112}
-#define    MINTCREAM        {245,255,250}
-#define    MISTYROSE        {255,228,225}
-#define    MOCCASIN         {255,228,181}
-#define    NAVAJOWHITE      {255,222,173}
-#define    NAVY             {0,0,128}
-#define    OLDLACE          {253,245,230}
-#define    OLIVE            {128,128,0}
-#define    OLIVEDRAB        {107,142,35}
-#define    ORANGE           {255,165,0}
-#define    ORANGERED        {255,69,0}
-#define    ORCHID           {218,112,214}
-#define    PALEGOLDENROD    {238,232,170}
-#define    PALEGREEN        {152,251,152}
-#define    PALETURQUOISE    {175,238,238}
-#define    PALEVIOLETRED    {219,112,147}
-#define    PAPAYAWHIP       {255,239,213}
-#define    PEACHPUFF        {255,218,185}
-#define    PERU             {205,133,63}
-#define    PINK             {255,192,203}
-#define    PLUM             {221,160,221}
-#define    POWDERBLUE       {176,224,230}
-#define    PURPLE           {128,0,128}
-#define    RED              {255,0,0}
-#define    ROSYBROWN        {188,143,143}
-#define    ROYALBLUE        {65,105,225}
-#define    SADDLEBROWN      {139,69,19}
-#define    SALMON           {250,128,114}
-#define    SANDYBROWN       {244,164,96}
-#define    SEAGREEN         {46,139,87}
-#define    SEASHELL         {255,245,238}
-#define    SIENNA           {160,82,45}
-#define    SILVER           {192,192,192}
-#define    SKYBLUE          {135,206,235}
-#define    SLATEBLUE        {106,90,205}
-#define    SLATEGRAY        {112,128,144}
-#define    SNOW             {255,250,250}
-#define    SPRINGGREEN      {0,255,127}
-#define    STEELBLUE        {70,130,180}
-#define    TAN              {210,180,140}
-#define    TEAL             {0,128,128}
-#define    THISTLE          {216,191,216}
-#define    TOMATO           {255,99,71}
-#define    TURQUOISE        {64,224,208}
-#define    VIOLET           {238,130,238}
-#define    WHEAT            {245,222,179}
-#define    WHITE            {255,255,255}
-#define    WHITESMOKE       {245,245,245}
-#define    YELLOW           {255,255,0}
-#define    YELLOWGREEN      {154,205,50}
+Color const    ALICEBLUE        = {240,248,255};
+Color const    ANTIQUEWHITE     = {250,235,215};
+Color const    AQUA             = {0,255,255};
+Color const    AQUAMARINE       = {127,255,212};
+Color const    AZURE            = {240,255,255};
+Color const    BEIGE            = {245,245,220};
+Color const    BISQUE           = {255,228,196};
+Color const    BLACK            = {0,0,0};
+Color const    BLANCHEDALMOND   = {255,235,205};
+Color const    BLUE             = {0,0,255};
+Color const    BLUEVIOLET       = {138,43,226};
+Color const    BROWN            = {165,42,42};
+Color const    BURLYWOOD        = {222,184,135};
+Color const    CADETBLUE        = {95,158,160};
+Color const    CHARTREUSE       = {127,255,0};
+Color const    CHOCOLATE        = {210,105,30};
+Color const    CORAL            = {255,127,80};
+Color const    CORNFLOWERBLUE   = {100,149,237};
+Color const    CORNSILK         = {255,248,220};
+Color const    CRIMSON          = {220,20,60};
+Color const    CYAN             = {0,255,255};
+Color const    DARKBLUE         = {0,0,139};
+Color const    DARKCYAN         = {0,139,139};
+Color const    DARKGRAY         = {169,169,169};
+Color const    DARKGREEN        = {0,100,0};
+Color const    DARKKHAKI        = {189,183,107};
+Color const    DARKMAGENTA      = {139,0,139};
+Color const    DARKOLIVEGREEN   = {85,107,47};
+Color const    DARKORANGE       = {255,140,0};
+Color const    DARKORCHID       = {153,50,204};
+Color const    DARKRED          = {139,0,0};
+Color const    DARKSALMON       = {233,150,122};
+Color const    DARKSEAGREEN     = {143,188,143};
+Color const    DARKSLATEBLUE    = {72,61,139};
+Color const    DARKSLATEGRAY    = {47,79,79};
+Color const    DARKTURQUOISE    = {0,206,209};
+Color const    DARKVIOLET       = {148,0,211};
+Color const    DEEPPINK         = {255,20,147};
+Color const    DEEPSKYBLUE      = {0,191,255};
+Color const    DIMGRAY          = {105,105,105};
+Color const    DODGERBLUE       = {30,144,255};
+Color const    FIREBRICK        = {178,34,34};
+Color const    FLORALWHITE      = {255,250,240};
+Color const    FORESTGREEN      = {34,139,34};
+Color const    FUCHSIA          = {255,0,255};
+Color const    GAINSBORO        = {220,220,220};
+Color const    GHOSTWHITE       = {248,248,255};
+Color const    GOLD             = {255,215,0};
+Color const    GOLDENROD        = {218,165,32};
+Color const    GRAY             = {128,128,128};
+Color const    GREEN            = {0,128,0};
+Color const    GREENYELLOW      = {173,255,47};
+Color const    HONEYDEW         = {240,255,240};
+Color const    HOTPINK          = {255,105,180};
+Color const    INDIANRED        = {205,92,92};
+Color const    INDIGO           = {75,0,130};
+Color const    IVORY            = {255,255,240};
+Color const    KHAKI            = {240,230,140};
+Color const    LAVENDER         = {230,230,250};
+Color const    LAVENDERBLUSH    = {255,240,245};
+Color const    LAWNGREEN        = {124,252,0};
+Color const    LEMONCHIFFON     = {255,250,205};
+Color const    LIGHTBLUE        = {173,216,230};
+Color const    LIGHTCORAL       = {240,128,128};
+Color const    LIGHTCYAN        = {224,255,255};
+Color const    LIGHTGOLDENRODYELLOW    = {250,250,210};
+Color const    LIGHTGRAY        = {211,211,211};
+Color const    LIGHTGREEN       = {144,238,144};
+Color const    LIGHTPINK        = {255,182,193};
+Color const    LIGHTSALMON      = {255,160,122};
+Color const    LIGHTSEAGREEN    = {32,178,170};
+Color const    LIGHTSKYBLUE     = {135,206,250};
+Color const    LIGHTSLATEGRAY   = {119,136,153};
+Color const    LIGHTSTEELBLUE   = {176,196,222};
+Color const    LIGHTYELLOW      = {255,255,224};
+Color const    LIME             = {0,255,0};
+Color const    LIMEGREEN        = {50,205,50};
+Color const    LINEN            = {250,240,230};
+Color const    MAGENTA          = {255,0,255};
+Color const    MAROON           = {128,0,0};
+Color const    MEDIUMAQUAMARINE = {102,205,170};
+Color const    MEDIUMBLUE       = {0,0,205};
+Color const    MEDIUMORCHID     = {186,85,211};
+Color const    MEDIUMPURPLE     = {147,112,219};
+Color const    MEDIUMSEAGREEN   = {60,179,113};
+Color const    MEDIUMSLATEBLUE  = {123,104,238};
+Color const    MEDIUMSPRINGGREEN = {0,250,154};
+Color const    MEDIUMTURQUOISE  = {72,209,204};
+Color const    MEDIUMVIOLETRED  = {199,21,133};
+Color const    MIDNIGHTBLUE     = {25,25,112};
+Color const    MINTCREAM        = {245,255,250};
+Color const    MISTYROSE        = {255,228,225};
+Color const    MOCCASIN         = {255,228,181};
+Color const    NAVAJOWHITE      = {255,222,173};
+Color const    NAVY             = {0,0,128};
+Color const    OLDLACE          = {253,245,230};
+Color const    OLIVE            = {128,128,0};
+Color const    OLIVEDRAB        = {107,142,35};
+Color const    ORANGE           = {255,165,0};
+Color const    ORANGERED        = {255,69,0};
+Color const    ORCHID           = {218,112,214};
+Color const    PALEGOLDENROD    = {238,232,170};
+Color const    PALEGREEN        = {152,251,152};
+Color const    PALETURQUOISE    = {175,238,238};
+Color const    PALEVIOLETRED    = {219,112,147};
+Color const    PAPAYAWHIP       = {255,239,213};
+Color const    PEACHPUFF        = {255,218,185};
+Color const    PERU             = {205,133,63};
+Color const    PINK             = {255,192,203};
+Color const    PLUM             = {221,160,221};
+Color const    POWDERBLUE       = {176,224,230};
+Color const    PURPLE           = {128,0,128};
+Color const    RED              = {255,0,0};
+Color const    ROSYBROWN        = {188,143,143};
+Color const    ROYALBLUE        = {65,105,225};
+Color const    SADDLEBROWN      = {139,69,19};
+Color const    SALMON           = {250,128,114};
+Color const    SANDYBROWN       = {244,164,96};
+Color const    SEAGREEN         = {46,139,87};
+Color const    SEASHELL         = {255,245,238};
+Color const    SIENNA           = {160,82,45};
+Color const    SILVER           = {192,192,192};
+Color const    SKYBLUE          = {135,206,235};
+Color const    SLATEBLUE        = {106,90,205};
+Color const    SLATEGRAY        = {112,128,144};
+Color const    SNOW             = {255,250,250};
+Color const    SPRINGGREEN      = {0,255,127};
+Color const    STEELBLUE        = {70,130,180};
+Color const    TAN              = {210,180,140};
+Color const    TEAL             = {0,128,128};
+Color const    THISTLE          = {216,191,216};
+Color const    TOMATO           = {255,99,71};
+Color const    TURQUOISE        = {64,224,208};
+Color const    VIOLET           = {238,130,238};
+Color const    WHEAT            = {245,222,179};
+Color const    WHITE            = {255,255,255};
+Color const    WHITESMOKE       = {245,245,245};
+Color const    YELLOW           = {255,255,0};
+Color const    YELLOWGREEN      = {154,205,50};
