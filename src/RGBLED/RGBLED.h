@@ -42,13 +42,13 @@ struct RGBLED{
         Init();
     }
     //Have the LED value point at the RGB color
-    void Init(){
+    void Init(void){
         led[0].value = &color.red;
         led[1].value = &color.green;
         led[2].value = &color.blue;
     }
     //Write to pins
-    void Update() const{
+    void Update(void) const{
         for(uint8_t i = 0; i < 3; i++){
             analogWrite(led[i].pin, *led[i].value);
         }
