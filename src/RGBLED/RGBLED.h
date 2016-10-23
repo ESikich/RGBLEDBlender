@@ -23,6 +23,7 @@
 #define RGBLED_h
 
 struct LED{
+    LED(uint8_t pin = 0, int16_t *value = NULL) : pin(pin), value(value) {}
     uint8_t pin;
     int16_t *value;
 };
