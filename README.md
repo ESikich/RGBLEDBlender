@@ -22,6 +22,8 @@ Overview of functions
 
 Usage
 =====================
+Requires 3 PWM pins.
+
 To blend arbitrary colors together, call the Blend() fuction once and then repeatedly call Update()
 
 ```C++
