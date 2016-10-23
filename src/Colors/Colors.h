@@ -73,7 +73,7 @@
 #define    LIGHTSLATEGRAY   {119,136,153}
 #define    LIGHTSTEELBLUE   {176,196,222}
 #define    LIGHTYELLOW      {255,255,224}
-#define    LIME             {0.255.0}
+#define    LIME             {0,255,0}
 #define    LIMEGREEN        {50,205,50}
 #define    LINEN            {250,240,230}
 #define    MAGENTA          {255,0,255}
@@ -84,7 +84,7 @@
 #define    MEDIUMPURPLE     {147,112,219}
 #define    MEDIUMSEAGREEN   {60,179,113}
 #define    MEDIUMSLATEBLUE  {123,104,238}
-#define    MEDIUMSPRINGGREEN{0,250,154}
+#define    MEDIUMSPRINGGREEN {0,250,154}
 #define    MEDIUMTURQUOISE  {72,209,204}
 #define    MEDIUMVIOLETRED  {199,21,133}
 #define    MIDNIGHTBLUE     {25,25,112}
