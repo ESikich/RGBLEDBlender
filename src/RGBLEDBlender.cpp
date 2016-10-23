@@ -21,9 +21,8 @@
 
 #include "RGBLEDBlender.h"
 
-//Initialize variables
-RGBLEDBlender::RGBLEDBlender(void){
-    rgbled_.Init();
+//init function
+void RGBLEDBlender::Init(void){
     start_millis_ = 0;
     end_millis_ = 0;
     cycle_index_ = 0;
@@ -31,12 +30,15 @@ RGBLEDBlender::RGBLEDBlender(void){
 }
 
 //Initialize variables
+RGBLEDBlender::RGBLEDBlender(void){
+    rgbled_.Init();
+    Init();
+}
+
+//Initialize variables
 RGBLEDBlender::RGBLEDBlender(const uint8_t red_pin, const uint8_t green_pin, const uint8_t blue_pin){
     rgbled_.Assign(red_pin, green_pin, blue_pin);
-    start_millis_ = 0;
-    end_millis_ = 0;
-    cycle_index_ = 0;
-    srand(analogRead(0));
+    Init();
 }
 
 //Blend two colors together

@@ -41,6 +41,7 @@ public:
     void TurnOff(void);                                         //Turn off LED
     Color GetColor(void) const;                                 //Get current color
 private:
+    void Init(void);
     int16_t IntPercent(const uint32_t, const uint32_t) const;   //Non floating point division function
     uint32_t start_millis_;                                     //Start and end times
     uint32_t end_millis_;
