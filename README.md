@@ -24,7 +24,7 @@ Overview of functions
 
 Usage
 =====================
-Requires 3 PWM pins.
+Requires 3 PWM pins per RGBLEDBlender object.  Objects may share the same pins in case of multiplexing or something similar.
 
 To blend arbitrary colors together, call the Blend() fuction once and then repeatedly call Update()
 
@@ -65,8 +65,7 @@ my_color *= 2;
 my_color += my_color2;
 //my_color would now be == {21, 32, 43}
 ```
-**NOTE:  Be vigilant when doing this, as the Color struct is made of int16_t's.
-Be sure to check your values as writing values < 0 or > 255 will cause under/overflow issues and you will not get the colors you expect.**
+**NOTE:  Be vigilant when doing this, as the Color struct is made of int16_t's.  Be sure to check your values as writing values < 0 or > 255 will cause under/overflow issues and you will not get the colors you expect.**
 
 
 Pre-defined color definitions
