@@ -22,9 +22,9 @@
 #ifndef RGBLEDBlender_h
 #define RGBLEDBlender_h
 
+
 #include "arduino.h"
 #include "Color/Color.h"
-#include "Vector/Vector.h"
 #include "RGBLED/RGBLED.h"
 #include "Colors/Colors.h"
 
@@ -34,9 +34,8 @@ public:
     RGBLEDBlender(const uint8_t, const uint8_t, const uint8_t); //Constructors
     void Blend(const Color,const Color,const  uint32_t);        //Blend two colors
     void Random(const uint32_t);                                //Blend random colors
-    void RandomCycle(const uint32_t);                           //Blend random colors from a list
-    void Cycle(uint32_t);                                       //Cycle through list of colors
-    void AddColor(const Color);                                 //Add color to list
+    void RandomCycle(const Color*, const uint8_t, const uint32_t); //Blend random colors from a list
+    void Cycle(const uint8_t, const uint32_t);                  //Cycle through list of colors
     bool Update(void);                                          //Update the blend
     void Hold(const Color);                                     //Hold color
     void TurnOff(void);                                         //Turn off LED
@@ -49,7 +48,7 @@ private:
     Color start_color_;                                         //Starting and ending colors
     Color end_color_;
     RGBLED rgbled_;                                             //Our RGBLED
-    Vector<Color> color_list_;                                  //List of colors
+    Color *color_list_;                                         //List of colors
     uint8_t cycle_index_;                                       //Color list counter
 };
 
