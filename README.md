@@ -16,11 +16,10 @@ Overview of functions
 **Random**      - Blends randomly generated colors together  
 **RandomCycle** - Randomly cycles through a list of colors  
 **Cycle**       - Cycles through a list of colors  
-**AddColor**    - Adds a color to the list  
 **Update**      - Call to update color  
 **Hold**        - Holds a color  
 **TurnOff**     - Turns off the LED  
-**GetColor**   - Returns current color
+**GetColor**    - Returns current color
 
 Usage
 =====================
@@ -43,12 +42,11 @@ For Random(), RandomCycle(), and Cycle(), just repeatedly call the function.
 
 
 ```C++
-Color color_list[6] = {RED, ORANGE, YELLOW, GREEN, BLUE, PURPLE};
-
-for(uint8_t i = 0; i < 6; i++) my_blender.AddColor(color_list[i]);
+uint8_t size = 6;
+Color color_list[size] = {RED, ORANGE, YELLOW, GREEN, BLUE, PURPLE};
 
 while(true){
-    my_blender.RandomCycle(1000);
+    my_blender.RandomCycle(color_list, size, 1000);
 }
 ```
 
