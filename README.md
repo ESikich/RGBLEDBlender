@@ -42,11 +42,10 @@ For Random(), RandomCycle(), and Cycle(), just repeatedly call the function.
 
 
 ```C++
-uint8_t size = 6;
-Color color_list[size] = {RED, ORANGE, YELLOW, GREEN, BLUE, PURPLE};
+Color color_list[6] = {RED, ORANGE, YELLOW, GREEN, BLUE, PURPLE};
 
 while(true){
-    my_blender.RandomCycle(color_list, size, 1000);
+    my_blender.RandomCycle(color_list, 6, 1000);
 }
 ```
 
