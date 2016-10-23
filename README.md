@@ -28,7 +28,7 @@ Requires 3 PWM pins per RGBLEDBlender object.  Objects may share the same pins i
 To blend arbitrary colors together, call the Blend() fuction once and then repeatedly call Update()
 
 ```C++
-my_blender.Blend(RED, YELLOW, blend_time);
+my_blender.Blend(_RED, _YELLOW, blend_time);
 
 uint32_t blend_time = 1000;
 uint32_t done = millis() + blend_time;
@@ -42,7 +42,7 @@ For Random(), RandomCycle(), and Cycle(), just repeatedly call the function.
 
 
 ```C++
-Color color_list[6] = {RED, ORANGE, YELLOW, GREEN, BLUE, PURPLE};
+Color color_list[6] = {_RED, _ORANGE, _YELLOW, _GREEN, _BLUE, _PURPLE};
 
 while(true){
     my_blender.RandomCycle(color_list, 6, 1000);

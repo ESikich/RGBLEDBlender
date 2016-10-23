@@ -113,7 +113,7 @@ void RGBLEDBlender::Hold(const Color color){
 
 //Turn off LED,
 void RGBLEDBlender::TurnOff(void){
-    Hold(BLACK);
+    Hold(_BLACK);
 }
 
 Color RGBLEDBlender::GetColor(void) const{
