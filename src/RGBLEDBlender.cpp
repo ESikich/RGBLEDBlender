@@ -53,9 +53,13 @@ void RGBLEDBlender::Blend(const Color start_color, const Color finish_color, con
 void RGBLEDBlender::Random(const uint32_t blend_millis){
     //Update the blend
     if(Update() == true){
-        uint32_t r = rand();
+        uint8_t colors[3]= {0};
+        for(uint8_t i = 0; i < 3; i++){
+            colors[i] = rand() % 255;
+        }
+        Color rand_color = {colors[1], colors[2], colors[3]};
         //Use the last color as the starting point and a random end color
-        Blend(end_color_, {uint8_t(r), uint8_t(r >> 8), uint8_t(r >> 8)}, blend_millis);
+        Blend(end_color_, rand_color, blend_millis);
     }
 }
 
