@@ -34,8 +34,8 @@ public:
     RGBLEDBlender(const uint8_t, const uint8_t, const uint8_t); //Constructors
     void Blend(const Color,const Color,const  uint32_t);        //Blend two colors
     void Random(const uint32_t);                                //Blend random colors
-    void RandomCycle(const Color*, const uint8_t, const uint32_t); //Blend random colors from a list
-    void Cycle(const Color*, const uint8_t, const uint32_t);                  //Cycle through list of colors
+    void RandomCycle(Color*, const uint8_t, const uint32_t); //Blend random colors from a list
+    void Cycle(Color*, const uint8_t, const uint32_t);                  //Cycle through list of colors
     bool Update(void);                                          //Update the blend
     void Hold(const Color);                                     //Hold color
     void TurnOff(void);                                         //Turn off LED

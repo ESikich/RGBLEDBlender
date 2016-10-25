@@ -14,8 +14,8 @@
 *   but WITHOUT ANY WARRANTY; without even the implied warranty of
 *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 *   GNU General Public License for more details.
-*
 *   You should have received a copy of the GNU General Public License
+*
 *   along with RGBLEDBlender.  If not, see <http://www.gnu.org/licenses/>.
 ******************************************************************************/
 
@@ -67,29 +67,29 @@ int16_t RGBLEDBlender::IntPercent(const uint32_t a, const uint32_t b) const{
 }
 
 //Cycle through random colors
-void RGBLEDBlender::RandomCycle(const Color *color_list, const uint8_t size, const uint32_t blend_millis){
+void RGBLEDBlender::RandomCycle(Color *color_list, const uint8_t size_, const uint32_t blend_millis){
     color_list_ = color_list;
     if(Update() == true){
-        Blend(end_color_, color_list_[rand() % size], blend_millis);
+        Blend(end_color_, color_list_[rand() % size_], blend_millis);
     }
 }
 
 //Cycle through a list of colors
-void RGBLEDBlender::Cycle(const Color *color_list, const uint8_t size, const uint32_t blend_millis){
-    color_list_ = color_list;
+void RGBLEDBlender::Cycle(Color *color_list, const uint8_t size_, const uint32_t blend_millis){
+    //color_list_ = color_list;
     
     //Reset cycle index at the end of the list
-    if(cycle_index_ == size){
+    if(cycle_index_ == size_){
         cycle_index_ = 0;
     }
     //Update the color
     if(Update() == true){
         //Make sure we're not at the end of the list
-        if(cycle_index_ != size){
-            Blend(color_list_[cycle_index_], color_list_[cycle_index_ + 1], blend_millis);
+        if(cycle_index_ != size_ - 1){
+            Blend(color_list[cycle_index_], color_list[cycle_index_ + 1], blend_millis);
         }else{
             //End of list, loop back to zero
-            Blend(color_list_[(sizeof(color_list_[0])/sizeof(color_list_)) - 1], color_list_[0],  blend_millis);
+            Blend(color_list[size_ - 1], color_list[0],  blend_millis);
         }
         //Increment the list counter
         ++cycle_index_;
