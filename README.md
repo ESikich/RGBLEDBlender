@@ -20,6 +20,7 @@ Overview of functions
 **Hold**        - Holds a color  
 **TurnOff**     - Turns off the LED  
 **GetColor**    - Returns current color
+**SetPins**     - Sets the RGB pin numbers
 
 Usage
 =====================
