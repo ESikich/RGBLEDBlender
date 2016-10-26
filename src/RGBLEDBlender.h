@@ -38,7 +38,8 @@ public:
     void Cycle(Color*, const uint8_t, const uint32_t);                  //Cycle through list of colors
     bool Update(void);                                          //Update the blend
     void Hold(const Color);                                     //Hold color
-    void TurnOff(void);                                         //Turn off LED
+    void SetPins(const uint8_t, const uint8_t, const uint8_t);
+    void TurnOff(void);                                         //Turn off LED}
     Color GetColor(void) const;                                 //Get current color
 private:
     void Init(void);

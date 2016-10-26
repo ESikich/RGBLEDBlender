@@ -38,8 +38,7 @@ RGBLEDBlender::RGBLEDBlender(void){
 
 //Initialize variables
 RGBLEDBlender::RGBLEDBlender(const uint8_t red_pin, const uint8_t green_pin, const uint8_t blue_pin){
-    rgbled_.Assign(red_pin, green_pin, blue_pin);
-    Init();
+    SetPins(red_pin, green_pin, blue_pin);   
 }
 
 //Blend two colors together
@@ -114,6 +113,11 @@ bool RGBLEDBlender::Update(void){
 void RGBLEDBlender::Hold(const Color color){
     rgbled_.color = color;
     rgbled_.Update();
+}
+
+void RGBLEDBlender::SetPins(const uint8_t red_pin, const uint8_t green_pin, const uint8_t blue_pin){
+    rgbled_.Assign(red_pin, green_pin, blue_pin);
+    Init();
 }
 
 //Turn off LED,
