@@ -36,7 +36,7 @@ struct Candle{
     uint8_t rand_color;
     
     void RandColor(void){do{rand_color = rand() % COLORS_;}while(rand_color == last_color);}  //make sure next random number is different than last
-    void RandTimer(void){timer = (rand() %  (vary * 2 + 50)) + vary; Serial.println(timer);}  //randomness
+    void RandTimer(void){timer = (rand() %  (vary * 2 + 50)) + vary;}  //randomness
     void Blend(Color* c_list) {blender.Blend(c_list[last_color], c_list[rand_color], timer);} //blend colors
     void Reset(void){
         last_color = rand_color; //save last color
@@ -45,7 +45,7 @@ struct Candle{
     }
 };
 
-void setup(){Serial.begin(9600);}
+void setup(){}
 
 void loop(){
     
