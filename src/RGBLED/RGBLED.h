@@ -50,7 +50,7 @@ struct RGBLED{
     //Write to pins
     void Update(void) const{
         for(uint8_t i = 0; i < 3; i++){
-            analogWrite(led[i].pin, min((*led[i].value / 255 * PWMRANGE), PWMRANGE);
+            analogWrite(led[i].pin, min((*led[i].value / 255 * PWMRANGE), PWMRANGE));
         }
     }
 };
