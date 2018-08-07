@@ -23,7 +23,7 @@
 #define RGBLEDBlender_h
 
 
-#include "arduino.h"
+#include "Arduino.h"
 #include "Color/Color.h"
 #include "RGBLED/RGBLED.h"
 #include "Colors/Colors.h"
