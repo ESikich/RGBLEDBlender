@@ -9,7 +9,6 @@ by Erik Sikich
 
 See Colors.h for color definitions  
 
-
 Overview of functions
 =====================
 **Blend**       - Blends two colors together  
